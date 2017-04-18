@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Login - Tech Care</string>
+    <string name="texto_contas">Todas as contas</string>
+    <string name="hint_nome">Nome</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_password">Senha</string>
+    <string name="hint_confirme_password">Confirme a Senha</string>
+    <string name="text_login">Login</string>
+    <string name="text_registro">Registrar</string>
+    <string name="erro_mensagem_nome">Digite o nome completo</string>
+    <string name="erro_mensagem_email">Digite um e-mail válido</string>
+    <string name="erro_mensagem_idade">Digite a idade</string>
+    <string name="erro_mensagem_password">Digite a senha</string>
+    <string name="success_message">Cadastro efetuado com sucesso!</string>
+    <string name="text_not_member">Não possui uma conta? Registre-se</string>
+    <string name="text_is_member">Já possui uma conta? Login</string>
+    <string name="erro_email_existe">E-mail já cadastrado</string>
+    <string name="erro_password_diferente">As senhas estão diferentes</string>
+    <string name="erro_validacao_email_password">E-mail ou senha inválido</string>
+    <string name="action_settings">Configurações</string>
+    <string name="text_hello">Olá,</string>
+    <string name="text_title">Conta Atual</string>
+</resources>
