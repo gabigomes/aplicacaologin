@@ -62,6 +62,17 @@ public class DataBase extends SQLiteOpenHelper {
         db.close();
     }
 
+    public String procuraUsuario(String email) {
+        String nomeUsuario = "null";
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor c=db.rawQuery("SELECT usuario_nome FROM usuario WHERE usuario_email='"+email+"'", null);
+        if (c.moveToFirst()) {
+            nomeUsuario = c.getString(0);
+        }
+        return nomeUsuario;
+    }
+
     public List<Usuario> getAllUser() {
 
         String[] columns = {

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_jogos"
+            android:icon="@drawable/ic_menu_jogos"
+            android:title="Jogos" />
+        <item
+            android:id="@+id/nav_pacientes"
+            android:icon="@drawable/ic_menu_paciente"
+            android:title="Pacientes" />
+        <item
+            android:id="@+id/nav_relatorios"
+            android:icon="@drawable/ic_menu_relatorios"
+            android:title="Relatórios" />
+        <item
+            android:id="@+id/nav_consultas"
+            android:icon="@drawable/ic_menu_consulta"
+            android:title="Consultas" />
+        <item
+            android:id="@+id/nav_notificacao"
+            android:icon="@drawable/ic_menu_notificacao"
+            android:title="Notificações" />
+        <item
+            android:id="@+id/nav_configuracao"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Configurações" />
+        <item
+            android:id="@+id/nav_contato"
+            android:icon="@drawable/ic_menu_contato"
+            android:title="Contate-nos" />
+
+    </group>
+
+</menu>

@@ -13,7 +13,6 @@ import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatTextView;
-import android.util.Log;
 import android.view.View;
 
 import com.example.gabi.aplicacaologin.SQL.DataBase;
@@ -26,7 +25,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private final AppCompatActivity activity = LoginActivity.this;
 
     private NestedScrollView nestedScrollView;
-
     private TextInputLayout textInputLayoutEmail;
     private TextInputLayout textInputLayoutPassword;
 
@@ -54,7 +52,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private void initViews() {
 
         nestedScrollView = (NestedScrollView) findViewById(R.id.nestedScrollView);
-
         textInputLayoutEmail = (TextInputLayout) findViewById(R.id.textInputLayoutEmail);
         textInputLayoutPassword = (TextInputLayout) findViewById(R.id.textInputLayoutPassword);
 
@@ -105,7 +102,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 , textInputEditTextPassword.getText().toString().trim())) {
 
 
-            Intent accountsIntent = new Intent(activity, ListaUsuarioActivity.class);
+            Intent accountsIntent = new Intent(activity, InicioActivity.class);
+            String nome = database.procuraUsuario(textInputEditTextEmail.getText().toString());
+            accountsIntent.putExtra("NOME", nome);
             accountsIntent.putExtra("EMAIL", textInputEditTextEmail.getText().toString().trim());
             emptyInputEditText();
             startActivity(accountsIntent);

@@ -20,4 +20,17 @@
     <string name="action_settings">Configurações</string>
     <string name="text_hello">Olá,</string>
     <string name="text_title">Conta Atual</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="jogos">JOGOS</string>
+    <string name="pacientes">PACIENTES</string>
+    <string name="relatorios">RELATÓRIOS</string>
+    <string name="consulta">CONSULTAS</string>
+    <string name="notificações">NOTIFICAÇÕES</string>
+    <string name="configuração">CONFIGURAÇÕES</string>
+    <string name="contato">CONTATE-NOS</string>
+    <string name="title_activity_main">ÍNICIO</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

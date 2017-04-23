@@ -3,84 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="/Users/gabi/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="/Users/gabi/AndroidStudioProjects/AplicacaoLogin/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_eb3ccbcf94c02ad335fb72e7a62e2ddbdb282d63/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/gabi/.android/build-cache/7462069f6347593c35ce70c992933cd80f53e84b/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
         <dex dex="/Users/gabi/AndroidStudioProjects/AplicacaoLogin/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dce1ec03acffd4521194d5b61cd7245dd59c2f84/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/gabi/.android/build-cache/3ca4772b0514d15d3e46c3997ca2534474fab30a/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="/Users/gabi/AndroidStudioProjects/AplicacaoLogin/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_055ed90e33f0b1fba9206df276f28418cca77e2f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/gabi/AndroidStudioProjects/AplicacaoLogin/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="/Users/gabi/AndroidStudioProjects/AplicacaoLogin/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_838f940544e6b02aee96ad1b4b4e2e0d246ee6a8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/gabi/.android/build-cache/4f66675bc2aefc9a18bdc1ac2e6737f1449e8223/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/gabi/AndroidStudioProjects/AplicacaoLogin/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8655dfbb8369165dbb68a44720c26fbe3a3fb010/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/gabi/.android/build-cache/82641fb7e85a055990ef6459c3ce0393016e3c01/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="/Users/gabi/AndroidStudioProjects/AplicacaoLogin/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_221f6c580be2c9cdde2141eb3ef52b043d0bdcc0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/gabi/.android/build-cache/49a2e858b8e889f21da052e135c47b84ff603e1f/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
-        <dex dex="/Users/gabi/AndroidStudioProjects/AplicacaoLogin/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3311132383c8930927834c7ee4e18bf2d89266af/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/gabi/AndroidStudioProjects/AplicacaoLogin/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="365be3596a33bd82d92137d98449cfc7a3f7e500">
-        <dex dex="/Users/gabi/AndroidStudioProjects/AplicacaoLogin/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_2ad80ea49f4584a053a431d8f69c695aebcd2578/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/gabi/.android/build-cache/a72c165c8b6467e1d4119eb4586210837d995215/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="/Users/gabi/AndroidStudioProjects/AplicacaoLogin/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6fa2dd3812a87c0e90328c498cdf3d9f1883accd/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -93,6 +21,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/gabi/.android/build-cache/3ca4772b0514d15d3e46c3997ca2534474fab30a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/Users/gabi/AndroidStudioProjects/AplicacaoLogin/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_055ed90e33f0b1fba9206df276f28418cca77e2f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/gabi/.android/build-cache/c6bec9208dd9b71cfd0c4683223e1c919841cd0f/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -102,12 +39,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/gabi/.android/build-cache/6614a89b7a9c9f7f6c008093a4b1bf10efd8bd96/output/jars/classes.jar"
+        jar="/Users/gabi/AndroidStudioProjects/AplicacaoLogin/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="/Users/gabi/AndroidStudioProjects/AplicacaoLogin/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9657215bcddd80e160f56b6ff1cb3c3a67441a16/classes.dex" />
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/gabi/AndroidStudioProjects/AplicacaoLogin/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_838f940544e6b02aee96ad1b4b4e2e0d246ee6a8/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -120,21 +57,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/gabi/.android/build-cache/6e36eaa50638f4f1008010cacde3dbe3dc8e9283/output/jars/classes.jar"
+        jar="/Users/gabi/.android/build-cache/49a2e858b8e889f21da052e135c47b84ff603e1f/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="/Users/gabi/AndroidStudioProjects/AplicacaoLogin/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_87be2931c76d5cf2c3ec8d704cad99bae35161a6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/gabi/.android/build-cache/55dc63b30325e15b2f794b06298bd918251b5ac1/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="/Users/gabi/AndroidStudioProjects/AplicacaoLogin/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_09860e6dc21ed06b653e6b400e7a62bb5764535f/classes.dex" />
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="/Users/gabi/AndroidStudioProjects/AplicacaoLogin/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3311132383c8930927834c7ee4e18bf2d89266af/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -144,6 +72,15 @@
         revision="25.0.2"
         sha1="7f2420506110902f033406b25697cf97ee8c38b2">
         <dex dex="/Users/gabi/AndroidStudioProjects/AplicacaoLogin/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_40a2eb8f2c43968dc5e08963835b5e5e272242b7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/gabi/AndroidStudioProjects/AplicacaoLogin/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b3e9beeda7582eb00c1320190d7a362d88b8b24d">
+        <dex dex="/Users/gabi/AndroidStudioProjects/AplicacaoLogin/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_2ad80ea49f4584a053a431d8f69c695aebcd2578/classes.dex" />
     </item>
 
 </items>
