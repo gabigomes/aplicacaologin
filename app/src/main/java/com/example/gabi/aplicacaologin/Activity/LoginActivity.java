@@ -4,11 +4,14 @@ package com.example.gabi.aplicacaologin.Activity;
  * Created by gabi on 15/04/17.
  */
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputEditText;
 import android.support.design.widget.TextInputLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
@@ -18,6 +21,12 @@ import android.view.View;
 import com.example.gabi.aplicacaologin.SQL.DataBase;
 import com.example.gabi.aplicacaologin.Validacao.Validacao;
 import com.example.gabi.aplicacaologin.*;
+
+import android.widget.Toast;
+
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.messaging.FirebaseMessaging;
+import android.util.Log;
 
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
@@ -47,6 +56,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         initViews();
         initListeners();
         initObjects();
+
     }
 
     private void initViews() {

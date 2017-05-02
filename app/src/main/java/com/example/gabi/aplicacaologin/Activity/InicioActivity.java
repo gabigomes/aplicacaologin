@@ -1,5 +1,6 @@
 package com.example.gabi.aplicacaologin.Activity;
-
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
@@ -11,12 +12,17 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+
 import com.example.gabi.aplicacaologin.*;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 
 public class InicioActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    SharedPreferences prefs = null;
+    FragmentManager fragmento = getSupportFragmentManager();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +30,12 @@ public class InicioActivity extends AppCompatActivity
         setContentView(R.layout.activity_menu_inicio);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        prefs = getSharedPreferences("com.example.gabi.aplicacaologin", MODE_PRIVATE);
+
+        if (prefs.getBoolean("firstrun", true)) {
+            startActivity(new Intent(InicioActivity.this, LoginActivity.class));
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -43,6 +55,46 @@ public class InicioActivity extends AppCompatActivity
         TextView emailPerfil = (TextView) perfilView.findViewById(R.id.textViewEmailPerfil);
         emailPerfil.setText(emailFromIntent);
 
+        if (getIntent().getExtras() != null) {
+            for (String key : getIntent().getExtras().keySet()) {
+                String value = getIntent().getExtras().getString(key);
+                if (key.equals("Activity") && value.equals("Jogos")) {
+                    fragmento.beginTransaction().replace(R.id.tela, new Jogos()).commit();
+                } else if (key.equals("Activity") && value.equals("Pacientes")) {
+                    fragmento.beginTransaction().replace(R.id.tela, new Pacientes()).commit();
+                } else if (key.equals("Activity") && value.equals("Relatorios")) {
+                    fragmento.beginTransaction().replace(R.id.tela, new Relatorios()).commit();
+                } else if (key.equals("Activity") && value.equals("Consultas")) {
+                    fragmento.beginTransaction().replace(R.id.tela, new Consultas()).commit();
+                } else if (key.equals("Activity") && value.equals("Notificacao")) {
+                    fragmento.beginTransaction().replace(R.id.tela, new Notificacao()).commit();
+                } else if (key.equals("Activity") && value.equals("Configuracao")) {
+                    fragmento.beginTransaction().replace(R.id.tela, new Configuracao()).commit();
+                } else if (key.equals("Activity") && value.equals("Contato")) {
+                    fragmento.beginTransaction().replace(R.id.tela, new Contato()).commit();
+                }
+            }
+        }
+
+        subscribeToPushService();
+    }
+
+    private void subscribeToPushService() {
+        FirebaseMessaging.getInstance().subscribeToTopic("news");
+
+
+        String token = FirebaseInstanceId.getInstance().getToken();
+
+        // Log and toast
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        if (prefs.getBoolean("firstRun", true)) {
+            prefs.edit().putBoolean("firstrun", false).commit();
+        }
     }
 
     @Override
@@ -60,8 +112,6 @@ public class InicioActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
-        FragmentManager fragmento = getSupportFragmentManager();
 
         if (id == R.id.nav_jogos) {
 
@@ -95,4 +145,6 @@ public class InicioActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
 }
